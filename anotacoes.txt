@@ -1,0 +1,11 @@
+comandos:
+
+git status
+
+git add (nome do arquivo)
+
+git rm --cached (file)
+
+git log
+
+git log --oneline
