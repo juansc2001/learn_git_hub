@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Consulta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Consulta Centralizada</h1>
+            <p>Busque por clientes, processos ou registros do sistema de forma rápida e simplificada.</p>
+        </header>
+
+        <main>
+            <!-- Seção do Formulário de Consulta -->
+            <section class="search-section">
+                <form id="searchForm" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="search-input">Termo de Busca</label>
+                        <input type="text" id="search-input" placeholder="Digite o nome, CPF ou número do registro...">
+                    </div>
+                    <div class="form-group">
+                        <label for="category-select">Categoria</label>
+                        <select id="category-select">
+                            <option value="todos">Todos os Registros</option>
+                            <option value="clientes">Clientes</option>
+                            <option value="processos">Processos</option>
+                            <option value="financeiro">Financeiro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Pesquisar</button>
+                </form>
+            </section>
+
+            <!-- Seção de Resultados da Consulta -->
+            <section class="results-section">
+                <h2>Resultados Encontrados</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome / Referência</th>
+                                <th>Categoria</th>
+                                <th>Data de Cadastro</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1024</td>
+                                <td>Carlos Eduardo Silva</td>
+                                <td><span class="badge badge-client">Clientes</span></td>
+                                <td>12/05/2026</td>
+                                <td><span class="status status-active">Ativo</span></td>
+                                <td><button class="btn-action">Visualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td>#1025</td>
+                                <td>Processo Administrativo nº 452</td>
+                                <td><span class="badge badge-process">Processos</span></td>
+                                <td>14/05/2026</td>
+                                <td><span class="status status-pending">Pendente</span></td>
+                                <td><button class="btn-action">Visualizar</button></td>
+                            </tr>
+                            <tr>
+                                <td>#1026</td>
+                                <td>Faturamento Mensal TI</td>
+                                <td><span class="badge badge-finance">Financeiro</span></td>
+                                <td>15/05/2026</td>
+                                <td><span class="status status-completed">Concluído</span></td>
+                                <td><button class="btn-action">Visualizar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Sistema de Consulta. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
