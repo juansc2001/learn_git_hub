@@ -10,10 +10,25 @@ git log
 
 git log --oneline
 
-checkout :nao altera o  historico
+checkout :nao altera o  historico, nao entendi muito bem mas serve para apenas dar uma olhada em como estava o meu sistema nas versoes anteriores
     git checkout main (para voltar pro comit original)
 
-revert :altera o historico, mas mantem o historico.
+
+
+
+revert : revert as mudanças que foram feitas em um  commit, e cria um commit disso ou seja, nao afeta o historico, no caso a reversao que foi feita de um commit ainda esta salva no historico de commits, apenas foi criado um commit sem quelas modificações. 
+por exemplo:  
+
+existem 3 commits
+8a45058 (HEAD -> main) index3(modificadas)
+b91a2ef (origin/main) index2.html criado
+e5a5647 anotações modificadas
+
+se eu dou o comando "git revert b91a2ef" , sera criado um commit sem o index2 mas ainda tera o index3 pois só sera alterado as modificações que foram feitas no commit "b91a2ef (origin/main) index2.html criado" , mas o arquivo index2 nao sera perdido ele apenas esta em um commit antigo
+
+
+
+
 
 reset  :deleta o historico entao é muito perioso.
 
