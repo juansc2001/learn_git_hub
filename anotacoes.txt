@@ -13,9 +13,9 @@ git log --oneline
 checkout :nao altera o  historico
     git checkout main (para voltar pro comit original)
 
-revert :altera o historico, mas mantem o historico
+revert :altera o historico, mas mantem o historico.
 
-reset  :deleta o historico entao é muito perioso
+reset  :deleta o historico entao é muito perioso.
 
 
 gh
