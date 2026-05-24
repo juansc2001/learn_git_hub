@@ -30,7 +30,9 @@ se eu dou o comando "git revert b91a2ef" , sera criado um commit sem o index2 ma
 
 
 
-reset  :deleta o historico entao é muito perioso.
+reset  :deleta o historico entao é muito perioso. utilizar ele sem o hard ainda mantem muitos dados do futuro, geralmente usado quando retirou muitos commits
+
+reset (id do commit) --hard  ja esse aqui realmente vai voltar tudo como era naquele commit e apaga os commits futuros entao é super perigoso 
 
 
 gh
