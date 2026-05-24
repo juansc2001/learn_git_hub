@@ -34,5 +34,28 @@ reset  :deleta o historico entao é muito perioso. utilizar ele sem o hard ainda
 
 reset (id do commit) --hard  ja esse aqui realmente vai voltar tudo como era naquele commit e apaga os commits futuros entao é super perigoso 
 
+💣 git push --force
+
+Ele basicamente diz:
+
+“Não me importa o que está no GitHub, sobrescreve tudo com o que eu tenho aqui.”
+
+Ou seja:
+
+Ignora completamente o estado do remoto
+Pode apagar commits de outras pessoas (ou até seus, se você esqueceu algo)
+É cego — não verifica nada antes
+🛡️ git push --force-with-lease
+
+Esse aqui é mais inteligente. Ele diz:
+
+“Só sobrescreve se o remoto ainda estiver exatamente como eu espero.”
+
+Na prática:
+
+Ele verifica se o origin/main não mudou desde o seu último pull/fetch
+Se alguém (ou você mesmo em outro lugar) fez push no meio tempo → ele bloqueia
+
+
 
 gh
