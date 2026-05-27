@@ -58,4 +58,11 @@ Se alguém (ou você mesmo em outro lugar) fez push no meio tempo → ele bloque
 
 
 
-gh
+git branch mostra todas as branchs criadas
+
+git branch 'nome' cria uma nova branch apartir da branch atual
+
+git branch -d 'nome' deleta o branch se ja tiver tido um merge
+
+git branch -D 'nome' deleta de forma forçada o branch
+
